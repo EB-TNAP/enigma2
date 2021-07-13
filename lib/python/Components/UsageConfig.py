@@ -13,9 +13,9 @@ import time
 
 def InitUsageConfig():
 	config.usage = ConfigSubsection()
-	config.usage.subnetwork = ConfigYesNo(default=True)
-	config.usage.subnetwork_cable = ConfigYesNo(default=True)
-	config.usage.subnetwork_terrestrial = ConfigYesNo(default=True)
+	config.usage.subnetwork = ConfigYesNo(default=False)
+	config.usage.subnetwork_cable = ConfigYesNo(default=False)
+	config.usage.subnetwork_terrestrial = ConfigYesNo(default=False)
 	config.usage.showdish = ConfigYesNo(default=True)
 	config.usage.multibouquet = ConfigYesNo(default=True)
 
