@@ -1175,7 +1175,7 @@ class PositionerSetup(Screen):
 		self.logMsg(_("Auto focus commencing ..."))
 		turningspeed = self.getTurningspeed()
 		measurements = {}
-		maxsteps = max(min(round(self.MAX_FOCUS_ANGLE / self.tuningstepsize), 0x1F), 3)
+		maxsteps = 86 # max(min(round(self.MAX_FOCUS_ANGLE / self.tuningstepsize), 0x1F), 3)
 		self.measure()
 		print>>log, (_("Initial signal quality:") + " %6.2f") % self.snr_percentage
 		print>>log, (_("Initial lock ratio") + "    : %6.2f") % self.lock_count
